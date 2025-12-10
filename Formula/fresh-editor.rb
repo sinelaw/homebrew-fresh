@@ -1,25 +1,25 @@
 class FreshEditor < Formula
   desc "A lightweight, fast terminal-based text editor with LSP support and TypeScript plugins"
   homepage "https://sinelaw.github.io/fresh/"
-  version "0.1.27"
+  version "0.1.28"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.27/fresh-editor-aarch64-apple-darwin.tar.xz"
-      sha256 "7ec115d5d295b32a9b8d2ece6f98eace70f5b613a3912c3c813054d0a514579c"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.28/fresh-editor-aarch64-apple-darwin.tar.xz"
+      sha256 "7a0bf049e8ff89ed0b23eb5fea7343128cd79996db7978076ac8b549bd316077"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.27/fresh-editor-x86_64-apple-darwin.tar.xz"
-      sha256 "a65b2b9401f55b82bcce6636644ca561be0410f3df53e4f91732f9d6eaac2e3c"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.28/fresh-editor-x86_64-apple-darwin.tar.xz"
+      sha256 "a603273cc7911250ae12412d2068d5e5ba0e374163986eb5285bf591a5c191c0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.27/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6edfbf15585af14bafb86f58c7a96359016852abf8965599ee87c5824444c3fe"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.28/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0208673fc9d90e4be55d0f6701a8fb8a834dcc6772e96b6c15c8c0c83cf99831"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.27/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "34ae360d72f81f1ec9174b5b2dff3d61d0cc532cb4cf62e593f7d2a1e94b62db"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.28/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "92396dc6919dc0fa5729fe3eeca9fcadad581fe6390867046f6431005370e5ef"
     end
   end
   license "GPL-2.0"
