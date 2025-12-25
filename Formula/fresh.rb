@@ -1,34 +1,35 @@
 class Fresh < Formula
   desc "A modern terminal-based text editor with plugin support"
   homepage "https://github.com/sinelaw/fresh"
-  version "0.1.59"
+  version "0.1.63"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.59/fresh-editor-x86_64-apple-darwin.tar.xz"
-      sha256 "ef74bb156017d2bc61e7e515484e1bb7f56ae282366cfb5aecb57966c9fa46ed"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.63/fresh-editor-x86_64-apple-darwin.tar.xz"
+      sha256 "d3804d6d26cc0b0122f715b6d446dd9f144cd7308a5b4dd3086e3db4b1314766"
     end
     on_arm do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.59/fresh-editor-aarch64-apple-darwin.tar.xz"
-      sha256 "ae9ec943efab1a5273fc958aa76562d53525cf59bbb800c634b85665ac216d2d"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.63/fresh-editor-aarch64-apple-darwin.tar.xz"
+      sha256 "ff04d11eff0782a1993f5b73bc82faf72686d473a4be19699be8a88d0bddfd4e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.59/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f889fb6ddcbaaf828041b097cb438a3256a5187ac98dcd48a674783eca711255"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.63/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cacd769ca264234d7b8e2bc6caee7b75187ef2a68d4ac8d81123fb710316e04e"
     end
     on_arm do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.59/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5cc3e7978e6be44fbfd94bedc143e95b4323e78a9643262c992638fa5373fc03"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.63/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6dfd38801e993286a62375fa4ee1f6a7cd87bb3a71f22542a19722d70255a4bb"
     end
   end
 
   def install
     bin.install "fresh"
     share.install "plugins" if File.directory?("plugins")
+    share.install "themes" if File.directory?("themes")
   end
 
   test do
