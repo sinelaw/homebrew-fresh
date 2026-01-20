@@ -1,28 +1,28 @@
 class Fresh < Formula
   desc "A modern terminal-based text editor with plugin support"
   homepage "https://github.com/sinelaw/fresh"
-  version "0.1.83"
+  version "0.1.86"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.83/fresh-editor-x86_64-apple-darwin.tar.xz"
-      sha256 "c44b9f99279218bea8c07dab8e26ac322d639745fc5da59c518254769a1d7b1c"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.86/fresh-editor-x86_64-apple-darwin.tar.xz"
+      sha256 "4a4595c2b7e949601b79736435a875f81d714e855937de5cc4ba38067b24f0cb"
     end
     on_arm do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.83/fresh-editor-aarch64-apple-darwin.tar.xz"
-      sha256 "ac0f62c9a78e1a97a51fefd642d2fa7c95c3d0ea85ff4c3309c870d9cfbb1631"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.86/fresh-editor-aarch64-apple-darwin.tar.xz"
+      sha256 "9c26a9a33dcdb1e3f63136986827d189eae5165890535bd5247fe9e611b963db"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.83/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5f550166e50b02555daaf46d64e6890b58bd3b86b6d1845f51a265c57a529e13"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.86/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "554bbebffcb30b1305eaadaeeafd0764e0b072c370cc9f33e5d511abc172db81"
     end
     on_arm do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.1.83/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "787fe24d85a4b9f2218ff5eb5160b846b958a0700b96cb181a3323948802c5b0"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.1.86/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6028cf78488aaf318b5620214baf108a1dbff99000598f429d2ac94a61920027"
     end
   end
 
