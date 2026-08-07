@@ -1,28 +1,28 @@
 class Fresh < Formula
   desc "A modern terminal-based text editor with plugin support"
   homepage "https://github.com/sinelaw/fresh"
-  version "0.4.6"
+  version "0.4.7"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.4.6/fresh-editor-x86_64-apple-darwin.tar.xz"
-      sha256 "4b3ea5178091bfbf78f3d74873e6113063d72fce26aca3e9e856bf5c9dc89db4"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.4.7/fresh-editor-x86_64-apple-darwin.tar.xz"
+      sha256 "9322faf15aece0e0752c519e1a7a9f0d7a107adfbd38001707e3357ce6167d59"
     end
     on_arm do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.4.6/fresh-editor-aarch64-apple-darwin.tar.xz"
-      sha256 "040070d98684d3d30511b3df6168b6b43d2325ebc07bfe5e6079dc6c5d4fa25b"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.4.7/fresh-editor-aarch64-apple-darwin.tar.xz"
+      sha256 "9ffa44e70e73ee1efcafe604936aa5aed5301cbd548e50b2448199c2fbf1b8f5"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.4.6/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0ccc39bfbbc4f3b29e234567f3bb9d99712ed36d5a752a31199051d30fc56615"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.4.7/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c2d161b2686d1e5c3c09db2591746402993d33f33ff77bf4fe67b575472ea87d"
     end
     on_arm do
-      url "https://github.com/sinelaw/fresh/releases/download/v0.4.6/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "53a50021787fedf9546cedfd91f28fa8d41519f596e10f1a0e5e449e173fb194"
+      url "https://github.com/sinelaw/fresh/releases/download/v0.4.7/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "81c7b6f3ad44f5e6af895495da06257d1580668d6eabee6a1e13853b49dbe4cd"
     end
   end
 
@@ -43,7 +43,7 @@ class Fresh < Formula
       self_update = false
 
       [hints]
-      formula = "fresh-editor"
+      formula = "fresh"
       tap = "sinelaw/homebrew-fresh"
     RECEIPT
   end
